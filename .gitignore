@@ -1,0 +1,7 @@
+# generated files
+output
+pelican-themes
+
+# python files
+*.pyc
+__pycache__
