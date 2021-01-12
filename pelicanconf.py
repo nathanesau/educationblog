@@ -3,7 +3,7 @@
 
 AUTHOR = 'Nathan Esau'
 SITENAME = 'educationblog'
-SITEURL = '/educationblog/output'
+SITEURL = '/educationblog'
 
 PATH = 'content'
 
