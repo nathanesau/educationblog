@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>educationblog</title><link href="/educationblog/" rel="alternate"></link><link href="/educationblog/feeds/all.atom.xml" rel="self"></link><id>/educationblog/</id><updated>2020-01-12T11:54:00-05:00</updated><entry><title>Java 225</title><link href="/educationblog/java-225.html" rel="alternate"></link><published>2020-01-12T11:54:00-05:00</published><updated>2020-01-12T11:54:00-05:00</updated><author><name>Nathan Esau</name></author><id>tag:None,2020-01-12:/educationblog/java-225.html</id><summary type="html">&lt;p&gt;I am no stranger to Java.&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>educationblog - programming</title><link href="/educationblog/" rel="alternate"></link><link href="/educationblog/feeds/programming.atom.xml" rel="self"></link><id>/educationblog/</id><updated>2020-01-12T11:54:00-05:00</updated><entry><title>Java 225</title><link href="/educationblog/java-225.html" rel="alternate"></link><published>2020-01-12T11:54:00-05:00</published><updated>2020-01-12T11:54:00-05:00</updated><author><name>Nathan Esau</name></author><id>tag:None,2020-01-12:/educationblog/java-225.html</id><summary type="html">&lt;p&gt;I am no stranger to Java.&lt;/p&gt;
 &lt;p&gt;But that doesn't mean that I like Java.&lt;/p&gt;
 &lt;p&gt;My computer science course will be using Java. I can't say I'm surprised:&lt;/p&gt;
 &lt;ul&gt;
@@ -141,20 +141,4 @@
 &lt;span class="p"&gt;}&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
-&lt;p&gt;I guess that's basically it for this post.&lt;/p&gt;</content><category term="programming"></category><category term="sfu"></category><category term="cmpt225"></category></entry><entry><title>Back to University</title><link href="/educationblog/back-to-university.html" rel="alternate"></link><published>2020-01-11T19:17:00-05:00</published><updated>2020-01-12T11:51:00-05:00</updated><author><name>Nathan Esau</name></author><id>tag:None,2020-01-11:/educationblog/back-to-university.html</id><summary type="html">&lt;p&gt;There are some silver linings to a global pandemic.&lt;/p&gt;
-&lt;p&gt;All university courses are now remote. This allows me to do something I've wanted to do for a while... which is... take more computer science courses &amp;#128515;.&lt;/p&gt;
-&lt;p&gt;Now, I know that most people who have already graduated don't use their free time …&lt;/p&gt;</summary><content type="html">&lt;p&gt;There are some silver linings to a global pandemic.&lt;/p&gt;
-&lt;p&gt;All university courses are now remote. This allows me to do something I've wanted to do for a while... which is... take more computer science courses &amp;#128515;.&lt;/p&gt;
-&lt;p&gt;Now, I know that most people who have already graduated don't use their free time to sign up for more university courses. But hear me out. I really liked university. Learning is fun and I always regretted not being able to take more computer science courses when I was in school studying actuarial science.&lt;/p&gt;
-&lt;p&gt;Fast forward a few years, and I am now a software engineer (&lt;em&gt;not an actuary anymore&lt;/em&gt;) and although you can learn basically everything these days online, there are a few benefits to taking some university courses.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;When you are paying for a course, you are more likely to put in some serious effort&lt;/li&gt;
-&lt;li&gt;If I want to do a master's one day, doing well in some upper level computer science courses won't hurt&lt;/li&gt;
-&lt;li&gt;Networking opportunities with students and professors&lt;/li&gt;
-&lt;li&gt;Student perks (10% off groceries? Student credit cards?)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;So, I've signed up for &lt;a href="https://www.sfu.ca/students/calendar/2021/spring/courses/cmpt/225.html"&gt;one computer science course&lt;/a&gt; this semester. If I wasn't working or could get my employer to reimburse me for more courses, maybe I would've done more. &lt;/p&gt;
-&lt;p&gt;I'll be taking the course at Simon Fraser University where I did my undergrad. Here is how far I live from the university. Glad I am don't have to make this commute &amp;#128514;.&lt;/p&gt;
-&lt;p&gt;&lt;img src="img/2021_01/commute.PNG"&gt;&lt;/p&gt;
-&lt;p&gt;Should be a fun challenge. Would be embarassing if I don't do well in this course given that I work with data structures and algorithms everyday. We shall see.&lt;/p&gt;
-&lt;p&gt;Oh and hopefully, I will be able to take another course (Operating Systems) in the summer.&lt;/p&gt;</content><category term="general"></category><category term="sfu"></category></entry></feed>
+&lt;p&gt;I guess that's basically it for this post.&lt;/p&gt;</content><category term="programming"></category><category term="sfu"></category><category term="cmpt225"></category></entry></feed>

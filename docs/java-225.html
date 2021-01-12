@@ -1,0 +1,278 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,400;0,700;1,400&family=Source+Sans+Pro:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="/educationblog/theme/stylesheet/style.min.css">
+
+
+    <link id="pygments-light-theme" rel="stylesheet" type="text/css"
+          href="/educationblog/theme/pygments/github.min.css">
+
+
+  <link rel="stylesheet" type="text/css" href="/educationblog/theme/font-awesome/css/fontawesome.css">
+  <link rel="stylesheet" type="text/css" href="/educationblog/theme/font-awesome/css/brands.css">
+  <link rel="stylesheet" type="text/css" href="/educationblog/theme/font-awesome/css/solid.css">
+
+    <link href="/educationblog/static/custom.css" rel="stylesheet">
+
+    <link href="/educationblog/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="educationblog Atom">
+
+
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+
+
+
+<meta name="author" content="Nathan Esau" />
+<meta name="description" content="I am no stranger to Java. But that doesn&#39;t mean that I like Java. My computer science course will be using Java. I can&#39;t say I&#39;m surprised: Java is popular in enterprise software (I used Java myself for about 6 months last year, primarily for writing Web APIs and command …" />
+<meta name="keywords" content="sfu, cmpt225">
+
+
+<meta property="og:site_name" content="educationblog"/>
+<meta property="og:title" content="Java 225"/>
+<meta property="og:description" content="I am no stranger to Java. But that doesn&#39;t mean that I like Java. My computer science course will be using Java. I can&#39;t say I&#39;m surprised: Java is popular in enterprise software (I used Java myself for about 6 months last year, primarily for writing Web APIs and command …"/>
+<meta property="og:locale" content="en_US"/>
+<meta property="og:url" content="/educationblog/java-225.html"/>
+<meta property="og:type" content="article"/>
+<meta property="article:published_time" content="2020-01-12 11:54:00-05:00"/>
+<meta property="article:modified_time" content="2020-01-12 11:54:00-05:00"/>
+<meta property="article:author" content="/educationblog/author/nathan-esau.html">
+<meta property="article:section" content="programming"/>
+<meta property="article:tag" content="sfu"/>
+<meta property="article:tag" content="cmpt225"/>
+<meta property="og:image" content="">
+
+  <title>educationblog &ndash; Java 225</title>
+
+</head>
+<body class="light-theme">
+  <aside>
+    <div>
+      <a href="/educationblog">
+        <img src="/educationblog/theme/img/profile.png" alt="" title="">
+      </a>
+
+      <h1>
+        <a href="/educationblog"></a>
+      </h1>
+
+
+
+      <nav>
+        <ul class="list">
+
+
+
+            <li>
+              <a target="_self" href="https://nathanesau.github.io" >Website</a>
+            </li>
+            <li>
+              <a target="_self" href="https://github.com/nathanesau" >Github</a>
+            </li>
+        </ul>
+      </nav>
+
+      <ul class="social">
+      </ul>
+    </div>
+
+  </aside>
+  <main>
+
+
+<article class="single">
+  <header>
+      
+    <h1 id="java-225">Java 225</h1>
+    <p>
+      Posted on Sun 12 January 2020 in <a href="/educationblog/category/programming.html">programming</a>
+
+    </p>
+  </header>
+
+
+  <div>
+    <p>I am no stranger to Java.</p>
+<p>But that doesn't mean that I like Java.</p>
+<p>My computer science course will be using Java. I can't say I'm surprised:</p>
+<ul>
+<li>
+<p>Java is popular in enterprise software (I used Java myself for about 6 months last year, primarily for writing Web APIs and command line tools)</p>
+</li>
+<li>
+<p>Java is also popular in general (ex. Android development)</p>
+</li>
+<li>
+<p>Java courses are a good way to teach Object Oriented Programming, which is a powerful way to write large, scalable applications</p>
+</li>
+</ul>
+<p>But... it's not Python. It's not C++. And it's not Rust. <em>Hint: I like those languages better</em></p>
+<p>My first computer science lecture is a Java review. I guess I'll write a bit of code here for my reference.</p>
+<p>Here is the Main class.</p>
+<div class="highlight"><pre><span></span><code><span class="c1">// Main.java</span>
+<span class="kn">import</span> <span class="nn">java.util.List</span><span class="p">;</span>
+<span class="kn">import</span> <span class="nn">java.util.ArrayList</span><span class="p">;</span>
+<span class="kn">import</span> <span class="nn">java.util.Random</span><span class="p">;</span>
+<span class="kn">import</span> <span class="nn">animals.Animal</span><span class="p">;</span>
+<span class="kn">import</span> <span class="nn">animals.AnimalFactory</span><span class="p">;</span>
+
+<span class="kd">class</span> <span class="nc">Main</span> <span class="p">{</span>
+
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="p">)</span> <span class="p">{</span>
+
+        <span class="n">AnimalFactory</span> <span class="n">factory</span> <span class="o">=</span> <span class="k">new</span> <span class="n">AnimalFactory</span><span class="p">();</span>
+        <span class="n">List</span><span class="o">&lt;</span><span class="n">Animal</span><span class="o">&gt;</span> <span class="n">animalList</span> <span class="o">=</span> <span class="k">new</span> <span class="n">ArrayList</span><span class="p">();</span>
+        <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="mi">5</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+            <span class="n">Animal</span> <span class="n">animal</span> <span class="o">=</span> <span class="n">factory</span><span class="p">.</span><span class="na">getRandomAnimal</span><span class="p">();</span>
+            <span class="n">animalList</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="n">animal</span><span class="p">);</span>
+        <span class="p">}</span>
+
+        <span class="k">for</span><span class="p">(</span><span class="n">Animal</span> <span class="n">animal</span> <span class="p">:</span> <span class="n">animalList</span><span class="p">)</span> <span class="p">{</span>
+            <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">animal</span> <span class="o">+</span> <span class="s">&quot; says &quot;</span><span class="p">);</span>
+            <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">animal</span><span class="p">.</span><span class="na">makeSound</span><span class="p">());</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+
+<p>...and then the Animal factory:</p>
+<div class="highlight"><pre><span></span><code><span class="c1">// AnimalFactory.java</span>
+<span class="kn">package</span> <span class="nn">animal</span><span class="p">;</span>
+
+<span class="kn">import</span> <span class="nn">animal.Animal</span><span class="p">;</span>
+<span class="kn">import</span> <span class="nn">animal.Cow</span><span class="p">;</span>
+<span class="kn">import</span> <span class="nn">animal.Dog</span><span class="p">;</span>
+
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">AnimalFactory</span> <span class="p">{</span>
+
+    <span class="kd">public</span> <span class="n">Animal</span> <span class="nf">getRandomAnimal</span><span class="p">()</span> <span class="p">{</span>
+
+        <span class="n">Random</span> <span class="n">rand</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Random</span><span class="p">();</span>
+        <span class="k">switch</span><span class="p">(</span><span class="n">r</span><span class="p">.</span><span class="na">nextInt</span><span class="p">(</span><span class="mi">3</span><span class="p">))</span> <span class="p">{</span>
+            <span class="k">case</span> <span class="mi">0</span><span class="p">:</span>
+                <span class="k">return</span> <span class="k">new</span> <span class="n">Cow</span><span class="p">(</span><span class="s">&quot;Pink&quot;</span><span class="p">,</span> <span class="s">&quot;name&quot;</span> <span class="o">+</span> <span class="n">r</span><span class="p">.</span><span class="na">nextInt</span><span class="p">(</span><span class="mi">10</span><span class="p">),</span> <span class="n">r</span><span class="p">.</span><span class="na">nextInt</span><span class="p">(</span><span class="mi">200</span><span class="p">));</span>
+            <span class="k">case</span> <span class="mi">1</span><span class="p">:</span>
+                <span class="k">return</span> <span class="k">new</span> <span class="n">Dog</span><span class="p">(</span><span class="s">&quot;Spaniel&quot;</span><span class="p">,</span> <span class="s">&quot;Blue&quot;</span><span class="p">,</span> <span class="s">&quot;name&quot;</span> <span class="o">+</span> <span class="n">r</span><span class="p">.</span><span class="na">nextInt</span><span class="p">(</span><span class="mi">100</span><span class="p">));</span>
+            <span class="k">case</span> <span class="mi">2</span><span class="p">:</span>
+                <span class="k">return</span> <span class="k">new</span> <span class="n">Dog</span><span class="p">(</span><span class="s">&quot;Shepherd&quot;</span><span class="p">,</span> <span class="s">&quot;Gold&quot;</span><span class="p">,</span> <span class="s">&quot;name&quot;</span> <span class="o">+</span> <span class="n">r</span><span class="p">.</span><span class="na">nextInt</span><span class="p">(</span><span class="mi">100</span><span class="p">));</span>
+        <span class="p">}</span>
+        <span class="k">return</span> <span class="kc">null</span><span class="p">;</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+
+<p>...and the Animal interface (yes, every class needs to be in its own file):</p>
+<div class="highlight"><pre><span></span><code><span class="c1">// Animal.java</span>
+<span class="kn">package</span> <span class="nn">animal</span><span class="p">;</span>
+
+<span class="kd">public</span> <span class="kd">interface</span> <span class="nc">Animal</span> <span class="p">{</span>
+
+    <span class="kd">public</span> <span class="n">String</span> <span class="nf">makeSound</span><span class="p">();</span>
+<span class="p">}</span>
+</code></pre></div>
+
+<p>and then the Cow class:</p>
+<div class="highlight"><pre><span></span><code><span class="c1">// Cow.java</span>
+<span class="kn">package</span> <span class="nn">animal</span><span class="p">;</span>
+
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">Cow</span> <span class="kd">implements</span> <span class="n">Animal</span> <span class="p">{</span>
+
+    <span class="kd">protected</span> <span class="kd">static</span> <span class="kd">final</span> <span class="n">String</span> <span class="n">color</span><span class="p">;</span>
+
+    <span class="kd">protected</span> <span class="kd">static</span> <span class="kd">final</span> <span class="n">String</span> <span class="n">name</span><span class="p">;</span>
+
+    <span class="kd">protected</span> <span class="kd">static</span> <span class="kd">final</span> <span class="kt">int</span> <span class="n">weight</span><span class="p">;</span>
+
+    <span class="kd">public</span> <span class="nf">Cow</span><span class="p">(</span><span class="n">String</span> <span class="n">color</span><span class="p">,</span> <span class="n">String</span> <span class="n">name</span><span class="p">,</span> <span class="kt">int</span> <span class="n">weight</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">this</span><span class="p">.</span><span class="na">color</span> <span class="o">=</span> <span class="n">color</span><span class="p">;</span>
+        <span class="k">this</span><span class="p">.</span><span class="na">name</span> <span class="o">=</span> <span class="n">name</span><span class="p">;</span>
+        <span class="k">this</span><span class="p">.</span><span class="na">weight</span> <span class="o">=</span> <span class="n">weight</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="nd">@Override</span>
+    <span class="kd">public</span> <span class="n">String</span> <span class="nf">makeSound</span><span class="p">()</span> <span class="p">{</span>
+        <span class="k">return</span> <span class="s">&quot;moo&quot;</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="kd">public</span> <span class="n">String</span> <span class="nf">toString</span><span class="p">()</span> <span class="p">{</span>
+        <span class="k">return</span> <span class="n">String</span><span class="p">.</span><span class="na">format</span><span class="p">(</span><span class="s">&quot;Cow: Color = %s, Name = %s, Weight = %d&quot;</span><span class="p">,</span> <span class="n">color</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">weight</span><span class="p">);</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+
+<p>and then the Dog class:</p>
+<div class="highlight"><pre><span></span><code><span class="c1">// Dog.java</span>
+<span class="kn">package</span> <span class="nn">animal</span><span class="p">;</span>
+
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">Dog</span> <span class="kd">implements</span> <span class="n">Animal</span> <span class="p">{</span>
+
+    <span class="kd">protected</span> <span class="kd">static</span> <span class="kd">final</span> <span class="n">String</span> <span class="n">breed</span><span class="p">;</span>
+
+    <span class="kd">protected</span> <span class="kd">static</span> <span class="kd">final</span> <span class="n">String</span> <span class="n">color</span><span class="p">;</span>
+
+    <span class="kd">protected</span> <span class="kd">static</span> <span class="kd">final</span> <span class="n">String</span> <span class="n">name</span><span class="p">;</span>
+
+    <span class="kd">public</span> <span class="nf">Dog</span><span class="p">(</span><span class="n">String</span> <span class="n">color</span><span class="p">,</span> <span class="n">String</span> <span class="n">name</span><span class="p">,</span> <span class="kt">int</span> <span class="n">weight</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">this</span><span class="p">.</span><span class="na">color</span> <span class="o">=</span> <span class="n">color</span><span class="p">;</span>
+        <span class="k">this</span><span class="p">.</span><span class="na">name</span> <span class="o">=</span> <span class="n">name</span><span class="p">;</span>
+        <span class="k">this</span><span class="p">.</span><span class="na">weight</span> <span class="o">=</span> <span class="n">weight</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="nd">@Override</span>
+    <span class="kd">public</span> <span class="n">String</span> <span class="nf">makeSound</span><span class="p">()</span> <span class="p">{</span>
+        <span class="k">return</span> <span class="s">&quot;woof-woof&quot;</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="kd">public</span> <span class="n">String</span> <span class="nf">toString</span><span class="p">()</span> <span class="p">{</span>
+        <span class="k">return</span> <span class="n">String</span><span class="p">.</span><span class="na">format</span><span class="p">(</span><span class="s">&quot;Dog: Breed = %s, Color = %s, Name = %s&quot;</span><span class="p">,</span> <span class="n">breed</span><span class="p">,</span> <span class="n">color</span><span class="p">,</span> <span class="n">name</span><span class="p">);</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+
+<p>I guess that's basically it for this post.</p>
+  </div>
+  <div class="tag-cloud">
+    <p>
+      <a href="/educationblog/tag/sfu.html">sfu</a>
+      <a href="/educationblog/tag/cmpt225.html">cmpt225</a>
+    </p>
+  </div>
+
+
+
+
+
+</article>
+
+    <footer>
+<p>&copy;  </p>
+<p>
+Built with <a href="http://getpelican.com" target="_blank">Pelican</a> using <a href="http://bit.ly/flex-pelican" target="_blank">Flex</a> theme
+</p>    </footer>
+  </main>
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context" : "http://schema.org",
+  "@type" : "Blog",
+  "name": " educationblog ",
+  "url" : "/educationblog",
+  "image": "",
+  "description": ""
+}
+</script>
+
+
+</body>
+</html>
