@@ -1,6 +1,6 @@
 # educationblog
 
-My education blog.
+My education blog. Live at https://nathanesau.github.io/educationblog/.
 
 ## Development Instructions
 
