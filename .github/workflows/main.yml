@@ -32,8 +32,8 @@ jobs:
       - name: Push to GitHub pages
         id: push-to-gh-pages
         run: |
-          git config --global user.name "my username"
-          git config --global user.email "myemail@provider.com"
+          git config --global user.name "Nathan Esau"
+          git config --global user.email "nathanesau1@gmail.com"
 
           git add docs/
           git commit --amend --no-edit
