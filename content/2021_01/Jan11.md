@@ -1,7 +1,7 @@
 ---
 title: Back to University
 date: 2020-01-11 19:17
-modified: 2020-01-11 19:17
+modified: 2020-01-12 11:51
 category: general
 tags: sfu
 Authors: Nathan Esau
@@ -20,12 +20,12 @@ Fast forward a few years, and I am now a software engineer (*not an actuary anym
 * Networking opportunities with students and professors
 * Student perks (10% off groceries? Student credit cards?)
 
-So, I've signed up for <a href="https://www.sfu.ca/students/calendar/2021/spring/courses/cmpt/225.html">one computer science course</a> this semester. If I wasn't working maybe or could get my employer to reimburse me for more courses, maybe I would've done more. 
+So, I've signed up for <a href="https://www.sfu.ca/students/calendar/2021/spring/courses/cmpt/225.html">one computer science course</a> this semester. If I wasn't working or could get my employer to reimburse me for more courses, maybe I would've done more. 
 
 I'll be taking the course at Simon Fraser University where I did my undergrad. Here is how far I live from the university. Glad I am don't have to make this commute &#128514;.
 
 <img src="img/2021_01/commute.PNG">
 
-Should be a fun challenge. Would be embarassing if I don't do well in this course given that I work with data structures and algorithms everyday plus in my free time. We shall see.
+Should be a fun challenge. Would be embarassing if I don't do well in this course given that I work with data structures and algorithms everyday. We shall see.
 
 Oh and hopefully, I will be able to take another course (Operating Systems) in the summer.
