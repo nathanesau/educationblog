@@ -1,5 +1,12 @@
 # educationblog
 
+Deploy Instructions:
+
+```bash
+# compiles the site to docs folder
+make publish
+```
+
 Themes:
 
 ```bash
