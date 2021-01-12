@@ -7,8 +7,25 @@ tags: sfu
 Authors: Nathan Esau
 ---
 
-2021 has arrived and we are still in the pandemic. I am at home a lot and quickly getting bored. So I came up the idea to take some online courses.
+There are some silver linings to a global pandemic.
 
-During my undergrad, I went to school at SFU and studied actuarial science. Most people don't know what that is, so don't worry about it.
+All university courses are now remote. This allows me to do something I've wanted to do for a while... which is... take more computer science courses &#128515;.
 
+Now, I know that most people who have already graduated don't use their free time to sign up for more university courses. But hear me out. I really liked university. Learning is fun and I always regretted not being able to take more computer science courses when I was in school studying actuarial science.
 
+Fast forward a few years, and I am now a software engineer (*not an actuary anymore*) and although you can learn basically everything these days online, there are a few benefits to taking some university courses.
+
+* When you are paying for a course, you are more likely to put in some serious effort
+* If I want to do a master's one day, doing well in some upper level computer science courses won't hurt
+* Networking opportunities with students and professors
+* Student perks (10% off groceries? Student credit cards?)
+
+So, I've signed up for <a href="https://www.sfu.ca/students/calendar/2021/spring/courses/cmpt/225.html">one computer science course</a> this semester. If I wasn't working maybe or could get my employer to reimburse me for more courses, maybe I would've done more. 
+
+I'll be taking the course at Simon Fraser University where I did my undergrad. Here is how far I live from the university. Glad I am don't have to make this commute &#128514;.
+
+<img src="img/2021_01/commute.PNG">
+
+Should be a fun challenge. Would be embarassing if I don't do well in this course given that I work with data structures and algorithms everyday plus in my free time. We shall see.
+
+Oh and hopefully, I will be able to take another course (Operating Systems) in the summer.
