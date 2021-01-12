@@ -1,22 +1,25 @@
 # educationblog
 
+My education blog.
+
+## Development Instructions
+
+General Instructions:
+
+* Add markdown files to content folder
+* Manually deploy using deploy instructions
+
 Deploy Instructions:
 
 ```bash
 # compiles the site to docs folder
 make publish
+
+# checkout gh-pages branch
+git checkout gh-pages
+
+# update docs (site files)
+git add docs/*
+git commit -m "update site"
+git push
 ```
-
-Themes:
-
-```bash
-# do not commit these (~350MB)
-git clone --recursive https://github.com/getpelican/pelican-themes
-```
-
-Instructions:
-
-* add new markdown file to ``content folder``
-* run ``make html`` to make the site
-<!-- for viewing site locally set SITEURL to /educationblog/output in pelicanconf.py``-->
-* run ``make publish`` to publish the site
