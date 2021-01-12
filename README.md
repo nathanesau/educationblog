@@ -15,9 +15,6 @@ Deploy Instructions:
 # compiles the site to docs folder
 make publish
 
-# checkout gh-pages branch
-git checkout gh-pages
-
 # update docs (site files)
 git add docs/*
 git commit -m "update site"
