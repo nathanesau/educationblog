@@ -1,7 +1,7 @@
 ---
 title: Discord Bot for Automating University
-date: 2020-01-12 11:54
-modified: 2020-01-12 11:54
+date: 2020-01-13 18:22
+modified: 2020-01-13 18:22
 category: programming
 tags: sfu, cmpt225, projects
 Authors: Nathan Esau
