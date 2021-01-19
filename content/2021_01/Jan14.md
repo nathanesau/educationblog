@@ -1,0 +1,37 @@
+---
+title: Too Many Projects
+date: 2020-01-18 22:42
+modified: 2020-01-18 22:42
+category: programming
+tags: sfu, cmpt225, projects
+Authors: Nathan Esau
+---
+
+Here is a quick list of the projects I did in the last week. Writing down here because there are too many and I will probably forget. I just hope I can keep everything straight in my head and remember to submit my CS assignment on time.
+
+* [Discord Bot in Python](https://repl.it/@nathanesau/DiscordBotCmpt225) (see previous Blog Post).
+* [chessapi in Java](https://github.com/nathanesau/chessapi)
+* [rushhour in Python plus re-write in C++](https://github.com/nathanesau/rushhour)... private currently, will make public at end of January
+* [rushhour WASM build](https://github.com/nathanesau/rushhour_wasm)
+* [realestate project WIP](https://github.com/nathanesau/tfrealestate)
+* [eduction blog in Python using Pelican](https://github.com/nathanesau/educationblog)
+
+These projects combined are probably ~ 4000 lines of code and I was probably 200 lines of code/ hour. But it varies.
+
+(~ 3 hrs) Discord Bot was completed and I am actually seeing notifications from it almost everyday. Code was pretty cool and learning ChatBot was useful. 7.5/10.
+
+(~ 8 hrs) ChessAPI was working for PGN from Fisher/Spasky Matches (1992). That was Fisher's match after coming out of 20 year retirement... However, ChessAPI is not yet to a finished state. For example, it doesn't support en pessant captures yet. The idea behind ChessAPI is provide PGN as an input and ChessAPI returns the current board. It should be a useful API and would allow for writing a JS chess frontend and calling the ChessAPI for logic. I used Spring Boot for the API. The gradle config turned out well. Good boilerplate code for other spring boot I may do in future. I also created a design diagram using Draw.io for the OOP for this one. Java code turned out good. 8/10.
+
+(~ 8 hrs) Rush Hour was completed and working well. I am not releasing the code yet until my CMPT 225 assignment which is related to Rush Hour is complete. I found a docker image which can be used to compile the Qt App to Web Assembly. Very cool. C++ is a little annoying. Vcpkg took like an hour to install Qt. I was pretty happy with the way my C++ code turned out. 9/10.
+
+(~ 2 hrs) Was a little tricky to figure out how to run Qt in browser for rushhour. Eventually I found a good solution using docker image to compile the .pro file to .html using Emscripten and deploying to GH pages. Not all browser's support WASM well right now (ex. Safari Mobile). Good potential here. 7/10.
+
+( ~ 3 hrs) Real estate scraper which I worked on for one evening. Selenium used for scraping since I am getting pretty good at that from work now. Finding a website to scrape which didn't spam me with Captcha (Completed Automated Public Turing test) was a bit of a challenge. My plan here was to scrape the website to a txt file every 1 hour or so. Initial scrape will be slow. Subsequent scrape we only need to process new listings. Probably full scrape done every day to remove sold listings. Then provide a Flask/ Django/ FastAPI backend (Python) to expose the data and a Vue.JS frontend to allow searching for data. Vue.JS will provide table with listings near Vancouver Skytains. Filter will allow to filter by Skytrain station and distance from station (default: 2KM). Distance between skytrain and property will be tricky. We have skytrain address and property address. Maybe Google Maps API provides way of figuring out distance. Or if we can somehow get latitute/ longitute of each address, we can figure out flying distance automatically. I think this project has potential, I just don't have time to finish it right now. Not complete. 5/10.
+
+(~ 2 hrs + time to write articles) Education blog using Python. Pelican is cool and I like the flex theme. It is a viable alternative to Jekyll although Jekyll is admittedly easier to setup. I like this blogging thing. 8/10.
+
+(~ 6 hrs) Course lectures and tutorials and messing around with SSH access to CSIL and [this repo](https://github.com/nathanesau/cmpt225_java). Actual assignment which is [here](https://github.com/nathanesau/cmpt225) probably took me two hour. Currently that repo is private. And I also re-wrote all the lecture code for first 5 lectures in C++ [here](https://github.com/nathanesau/cmpt225_cpp) which was good CMake practice. And messed around programming on Arch Linux. Course has been going well. 8/10.
+
+Total: ~ 32 hours + blogging time + too much time messaging classmates on Discord and giving random ideas to people like how to design and Image Repository. And this is on top of my full time work... too many meetings (~ 40 hours). So ya. I could cut down the time considerably by just not spending so much time on personal projects. But it does create a pretty Git commit History lol.
+
+Other project ideas I had include a hockey pool site, which I would like to do. And I also didn't finish my site clone for [Mint](https://github.com/nathanesau/sd-mint). The other site clones are [here](https://github.com/nathanesau/site-clones). And now that I got that WASM thing working for RushHour in C++, it would be cool to put my [Rook game](https://github.com/nathanesau/RookGame) in the browser. But I seem to have something of an addiction to personal projects right now. No more please...
