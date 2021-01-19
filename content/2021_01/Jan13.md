@@ -72,30 +72,36 @@ import requests
 BASEDIR = os.path.dirname(os.path.realpath(__file__))
 
 def scrape_lecture_attachments():
-    page = urllib.request.urlopen(os.getenv('LECTURES_URL'))
-    soup = BeautifulSoup(page, 'html.parser')
+  page = urllib.request.urlopen(os.getenv('LECTURES_URL'))
+  soup = BeautifulSoup(page, 'html.parser')
 
-    # check for new attachments
-    attachments = []
-    links = soup.find_all('a')
-    for link in links:
-        if '.zip' in link.text:
-            attachments.append(link.text)
+  # check for new attachments
+  attachments = []
+  links = soup.find_all('a')
+  for link in links:
+    if '.zip' in link['href']:
+      attachment_url = f"{os.getenv('BASE_URL')}/{link['href']}"
+      response = requests.get(attachment_url)
+      if response.status_code == 200:  # first time seeing this zip
+        attachments.append(attachment_url)
 
-    return attachments
+  return attachments
 
 def scrape_assignment_attachments():
-    page = urllib.request.urlopen(os.getenv('ASSIGNMENTS_URL'))
-    soup = BeautifulSoup(page, 'html.parser')
+  page = urllib.request.urlopen(os.getenv('ASSIGNMENTS_URL'))
+  soup = BeautifulSoup(page, 'html.parser')
 
-    # check for new attachments
-    attachments = []
-    links = soup.find_all('a')
-    for link in links:
-        if '.zip' in link.text:
-            attachments.append(link.text)
+  # check for new attachments
+  attachments = []
+  links = soup.find_all('a')
+  for link in links:
+    if '.zip' in link['href']:
+      attachment_url = f"{os.getenv('BASE_URL')}/{link['href']}"
+      response = requests.get(attachment_url)
+      if response.status_code == 200:  # first time seeing this zip
+        attachments.append(attachment_url)
 
-    return attachments
+  return attachments
 
 def load_lecture_attachments():
   with open(f"{BASEDIR}/data/lecture_attachments.txt") as f:
@@ -140,7 +146,7 @@ def run():
       requests.post(url=os.getenv('WEBHOOK_URL'), data={"content": msg})
       append_new_assignment_attachments(diff)
       
-    time.sleep(60)
+    time.sleep(60*5) # every 5 minutes
 
 def keep_scrape_alive():
   t = Thread(target=run)
