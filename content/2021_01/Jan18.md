@@ -1,0 +1,18 @@
+---
+title: Advent of Code Comments
+date: 2020-01-19 00:02
+modified: 2020-01-19 00:092
+category: programming
+tags: sfu, cmpt225, projects
+Authors: Nathan Esau
+---
+
+I realize I never did finish [Advent of Code 2020](https://adventofcode.com/2020). My Repo is [here](https://github.com/nathanesau/advent_of_code_2020).
+
+I did film youtube videos for first 9 solutions. Will probably add more when I have time. Maybe after semester is over. Ended up coding total of 13 days (at least I did over half the problems!). Next year may be better for this? I should actually do better with *actual* Advent reading not just *Advent coding*.
+
+Seems that my [Graph Solution for Day 7](https://youtu.be/FPKAS6vX1O4) was the most popular. I kind of liked the [Sudoku Python Video](https://youtu.be/4uUQToFVUYA) but it didn't gain much traction.
+
+Also created cool AoC 2015 Java template [here](https://github.com/nathanesau/advent_of_code_2015).
+
+Was thinking of creating some YouTube videos based on some of the things I mention [here](https://nathanesau.github.io/educationblog/too-many-projects.html#too-many-projects). Probably will if I get around to it.
